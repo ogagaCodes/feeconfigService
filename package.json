@@ -1,0 +1,35 @@
+{
+  "name": "feeconfig",
+  "version": "0.0.1",
+  "description": "A sample fee processing service",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 20000 --exit",
+    "coverage": "nyc npm run test",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "fee",
+    "processing",
+    "money",
+    "payment"
+  ],
+  "author": "ADJARO LORD OGAGA",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "joi": "^17.6.0",
+    "mongoose": "^6.2.7"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "morgan": "^1.10.0",
+    "sinon": "^13.0.1"
+  }
+}
