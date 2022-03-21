@@ -36,10 +36,11 @@ app.use(function (_err, _req, _res, _) {
 });
 
 const apiRouter = express.Router();
+// const routes = require("../src/app/modules");
 
 // expose routes here
 // apiRouter.use(routes());
-app.use('/', apiRouter);
+// app.use('/', routes);
 // handler for route-not-found
 apiRouter.use((_req, _res, next) => {
   next(
@@ -82,4 +83,3 @@ apiRouter.use((error, _req, res, _next) => {
 
 
 module.exports = app;
-// module.exports = server;
