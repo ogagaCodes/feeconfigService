@@ -20,7 +20,7 @@ app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(compression());
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 
 app.use(function (_err, _req, _res, _) {
 
